@@ -10,6 +10,7 @@ class Captain < ActiveRecord::Base
   end
 
   def self.talented_seafarers
+    where(id: sailors & motorboaters).uniq
   end
 
   def self.non_sailors
