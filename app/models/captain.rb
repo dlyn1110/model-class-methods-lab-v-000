@@ -9,4 +9,7 @@ class Captain < ActiveRecord::Base
 
   def self.talented_seafarers
   end
+
+  def self.non_sailors
+  end
 end
