@@ -8,6 +8,5 @@ class Classification < ActiveRecord::Base
 
   def self.longest
     Boat.order("length DESC").first.classifications
-    binding.pry 
   end
   end
