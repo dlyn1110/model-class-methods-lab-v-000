@@ -23,7 +23,6 @@ class Boat < ActiveRecord::Base
     where(captain: nil)
   end
 
-  def self.sailboats
     def self.sailboats
     joins(:classifications).where(classifications: {name: "Sailboat"})
   end
